@@ -1,0 +1,10 @@
+endpoint: ${env:PRISMA_ENDPOINT}
+# prisma deploy
+datamodel: ${env:PRISMA_DATAMODEL}
+# prisma generate
+secret: ${env:PRISMA_SECRET}
+# prisma token
+
+generate:
+  - generator: graphql-schema
+    output: ${env:OUTPUT_FOLDER}
